@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assinment three</title>
-    <!-- tailwind  -->
-     <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinment three</title>
+  <!-- tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@500&family=Lato&family=Montserrat:wght@500&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          
+
+          },
+          fontFamily: {
+            fbFont: ['EB Garamond', " serif"]
+
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-        <!-- nav ber  -->
-        <nav class="flex items-center justify-between w-fll max-w-7xl mx-auto mt-10">
-            <div>
-                <img src="images/logo2.png" alt="">
-            </div>
-            <div>
-                <ul class="flex text-slate-500 gap-5">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Cases</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <button class="border p-3 rounded bg-yellow-600 text-white">Free Consultation</button>
-            
-        </nav>
-   
-    
+  <!-- nav ber  -->
+  <nav class="flex items-center justify-between w-fll max-w-7xl mx-auto mt-10">
+    <div>
+      <img src="images/logo2.png" alt="">
+    </div>
+    <div>
+      <ul class="flex text-slate-500 gap-5">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Cases</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <button class="border p-3 rounded bg-yellow-600 text-white">Free Consultation</button>
+
+  </nav>
+  <!-- main secion  -->
+  <main>
+
+    <!-- legal solation  -->
+    <section>
+      <div class="h-[550px] bg-[url('./images/banner.png')] bg-cover rounded mt-10 w-full max-w-7xl mx-auto bg-center">
+      <div class="text-center py-28 text-white">
+        <h1 class=" font-fbFont text-6xl mb-3">We Provide Effective <br> Legal Solutions</h1>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority <br>have suffered alteration in some form, by injected humour.</p>
+        <div class="mt-5">
+          <input class="p-3  w-2/6 rounded" type="text" placeholder="Seach your service">
+          <button class="border p-3 px-7 bg-yellow-600 rounded">seach</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- legal partice section  -->
+    <section class="w-fll max-w-7xl mx-auto text-center mt-24">
+      <div class="">
+        <h1 class="text-4xl font-fbFont">The Legal Practice Area</h1>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+      </div>
+
+    </section>
+
+
+  </main>
 </body>
+
 </html>
